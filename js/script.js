@@ -52,7 +52,10 @@ function toggleMenu(visible) {
   //document.querySelector('.hamburger').classList.slideToggle( "slow");
 }
 
-openModal('#chatModal');
+document.querySelector('.manager').addEventListener('click', function(e) {
+  e.preventDefault();
+  openModal('#chatModal');
+});
 
 var ctx = document.getElementById('myChart').getContext('2d');
 
