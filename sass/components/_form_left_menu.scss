@@ -1,0 +1,101 @@
+.nav-left{
+	width: 20%;
+	background: $lt-menu-bg-color;
+	padding: 0;
+	z-index: 1;
+	.logo {
+		padding: 16px;
+		height: 50px;
+	}
+}
+
+
+ul{
+	margin: auto; 
+	padding: 0;
+	list-style-type: none;
+	vertical-align: middle;
+	
+	li{
+	   display: block;
+	   font-weight: 300;
+	   a {
+			color: $lt-menu-font-color;
+			line-height: 30px;
+			display: flex;
+			align-items: center;
+			padding: 10px 10px 10px 18px;
+			text-decoration: none;
+			
+			svg {
+				margin-right: 15px;
+				path{
+					fill: $lt-menu-font-color;
+					}
+			}
+			
+			&:hover,
+			{
+				background: $lt-menu-bg-color-hover;
+				color: $lt-menu-font-color-hover;
+				padding: 10px 10px 10px 13px;
+				border-left: 5px solid $brand-main-color;
+				svg {
+					path {
+						fill: $lt-menu-font-color-hover;
+					}
+				}
+			}
+			
+			.icon {
+				color: red;
+				height: 20px;
+				width: 20px;
+				margin-right: 16px;
+				}
+		}
+		
+		
+	}
+}
+
+.verticalMenu-sm {
+	display: none;
+}
+
+.manager-header{
+	@extend %padder;
+}
+
+.manager{
+	@extend %padder;
+	margin-top: 20px;
+	padding-bottom: 20px;
+	display: flex;
+	align-items: center;
+	color: $lt-menu-font-manager;
+	font-weight: 300;
+}
+
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid $lt-menu-font-color;
+	margin: 1em 0;
+	padding: 0; 
+}
+
+.avatar-small{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	margin-right: -10px;
+}
+
+.avatar-big{
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+}

@@ -1,0 +1,26 @@
+
+.deposits {
+	width: 70%;
+	margin: 20px auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	
+	.deposit {
+		display: flex;
+		justify-content: space-between;
+		width: 40%;
+		padding: 10px 0;
+		margin: 12px 0;
+		border: 0;
+		border-bottom: 1px solid $rt-content-bg-color;
+		.heading{
+			font-weight: 700;
+		}
+		.amount {
+			font-weight: 300;
+			color: black;
+		}
+	}
+}

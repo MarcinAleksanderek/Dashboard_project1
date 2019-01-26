@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400');
+@import "variables";
+@import "mixins";
+@import "normalize";
+@import "layout";
+
+/* Components */
+@import "components/form_field";
+@import "components/date_picker";
+@import "components/form_overlay";
+@import "components/form_hamburger";
+@import "components/form_buttons";
+@import "components/form_status_indicators";
+@import "components/_form_statistics";
+@import "components/_form_left_menu";
+@import "components/_form_right_menu";
+@import "components/_form_chat";
+
+/* Sections */
+@import "sections/registration_form";
+
+/* Pages / Views */
+@import "pages/registration";
+
+body{
+	color: $lt-menu-font-color;
+	background: $rt-content-bg-color;
+	font-family: $menu-font;
+	padding: 0;
+	height: 1500px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.show {
+		display: block;
+	}
+
+.content {
+	display: block;
+	width: 96%;
+	margin: 80px auto;
+	background: $lt-menu-font-color-hover;
+	.content-section {
+		display: block;
+		padding: 12px;
+		border-bottom: 2px solid $rt-content-bg-color;
+		&.higher{
+			padding: 40px 12px;;
+		}
+	}
+}
+
+.scroll-wrapper {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.scroll-wrapper table {
+  width: 100%;
+  max-width: 100%;
+  img {
+	width: auto;
+  }
+}
+
+.centerer {
+	text-align: center;
+}
+
+@media(max-width: 767px) {
+  @include grid('sm');
+  
+  .nav-left{
+		position: fixed;
+		min-height: 50px;
+		width: 100%;
+		left: 0;
+		right: 0;
+		.verticalMenu {
+			display: none;
+		}
+	}
+	
+	.verticalMenu-sm {
+			position: relative;
+			background: $lt-menu-bg-color;
+			//margin-top: 50px;
+			padding-top: 50px;
+			display: none;
+			width: 100%;
+			&.show {
+				display: block;
+			}
+	}
+	
+	.form-right {
+		width: 100%;
+		float: right;
+		background: inherits;
+		.nav-top {
+			display: none;
+		}
+	}
+	
+	.deposits{
+		width: 100%;
+		margin: 20px auto;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		.deposit{
+			width: 90%;
+		}
+	}
+}
+
+@media(min-width: 768px) {
+  @include grid('md');
+  
+  .nav-left{
+		height: 100%;
+		position: fixed;
+		.hamburger {
+			display: none;
+		}
+		.verticalMenu {
+			display: block;
+		}
+	}
+	
+	.verticalMenu-sm {
+		display: none;
+	}
+}
+
+@media(min-width: 992px) {
+  @include grid('lg');
+}
+
+@media(min-width: 1200px) {
+  @include grid('xl');
+}

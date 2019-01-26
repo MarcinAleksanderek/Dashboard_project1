@@ -1,0 +1,33 @@
+.date-picker {
+	display: inline-block;
+	position: relative;
+	min-width: 300px;
+	height: 40px;
+	padding: 10px;
+	margin: 10px 12px 10px 0;
+	border: 1px solid $rt-content-border-color;
+	span{
+		margin: 0 16px;
+	}
+	.icon {
+		width: 20px;
+		height: 20px;
+		display: inline-block;
+		svg {
+				margin: auto 12px;
+				position: relative;
+				path {
+							fill: $lt-menu-font-color;
+						}
+			}
+	}
+	&::before{
+		content: '';
+		position: absolute;
+		margin: 0 2px;
+		border: 0;
+		border-right: 1px solid $rt-content-border-color;
+		left: 135px;
+		min-height:50%;
+	}
+}

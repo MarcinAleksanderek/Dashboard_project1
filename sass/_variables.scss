@@ -1,0 +1,30 @@
+/* Colors */
+$paragraph-color: #000000;
+$brand-main-color: #f58220;
+$lt-menu-bg-color: #191919;
+$lt-menu-bg-color-hover: #282828;
+$lt-menu-font-color: #999999;
+$lt-menu-font-color-hover: white;
+$lt-menu-font-manager: #46657B;
+$rt-content-bg-color: #F4F4F1;
+$rt-content-border-color: #E1E1E1;
+$btn-background-grey: #979797;
+$btn-background-lightgrey: #F3F3F1;
+$btn-font-lightgrey: #B7B7B6;
+$btn-font-lightgrey2: #BABABA;
+
+%padder{
+	padding: 0 16px;
+}
+
+%shadow{
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Font sizes */
+$paragraph-font-size: 16px;
+
+/* Fonts */
+$brand-font: "Open Sans", Helvetica, Arial;
+$paragraph-font: "Open Sans", Helvetica, Arial;
+$menu-font: 'Roboto', sans-serif;

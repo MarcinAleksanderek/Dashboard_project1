@@ -1,0 +1,90 @@
+.speech-bubble-other { 
+	padding: 12px;
+	min-width: 50%;
+	position: relative; 
+	background: $btn-background-lightgrey; 
+	border-radius: .4em; 
+	color: #000;
+	margin-bottom: 14px;
+} 
+
+.speech-bubble-other:after { 
+	content: ''; 
+	position: absolute; 
+	right: 0; top: 50%; 
+	width: 0; height: 0; 
+	border: 9px solid transparent; 
+	border-left-color: $btn-background-lightgrey; 
+	border-right: 0; 
+	border-top: 0; 
+	margin-top: -4.5px; 
+	margin-right: -9px; 
+}
+
+.speech-bubble-my { 
+	position: relative; 
+	background: $btn-font-lightgrey2;
+	border-radius: .4em; 
+	color: white;
+	padding: 12px;
+	margin-bottom: 14px;
+} 
+
+.speech-bubble-my:after { 
+	content: ''; 
+	position: absolute; 
+	left: 0; 
+	top: 50%; 
+	width: 0; 
+	height: 0; 
+	border: 9px solid transparent; 
+	border-right-color: $btn-font-lightgrey2; 
+	border-left: 0; 
+	border-top: 0; 
+	margin-top: -4.5px;
+	margin-left: -9px; 
+}
+
+input[type="text"] {
+  width: 85%;
+  font-size: 14px;
+  background-color: white;
+  border: none;
+  color: #000000;
+  outline: none;
+}
+
+.chat-properties {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.chat-persona {
+	display: inline-block;
+	width:40%;
+	margin-left: 20px;
+	color: black;
+	font-weight: 300;
+	font-size: 30px;
+	p{
+		margin: 0;
+	}
+}
+
+.chat_input{
+	display: inline-block;
+	width: 80%;
+	padding: 12px;
+	background-color: white;
+	border: none;
+	border: 1px solid $btn-font-lightgrey2; 
+	border-radius: 10px;
+	svg {
+		margin: 0 10px -4px 5px;
+		path {
+			
+			fill: $lt-menu-font-color;
+		}
+	}
+}
