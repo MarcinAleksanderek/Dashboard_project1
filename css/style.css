@@ -246,7 +246,7 @@ ul li a .icon { color: red; height: 20px; width: 20px; margin-right: 16px; }
 
 .verticalMenu-sm { display: none; }
 
-.manager { margin-top: 20px; padding-bottom: 20px; display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; color: #46657B; font-weight: 300; }
+.manager { cursor: pointer; margin-top: 20px; padding-bottom: 20px; display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; color: #46657B; font-weight: 300; }
 
 hr { display: block; height: 1px; border: 0; border-top: 1px solid #999999; margin: 1em 0; padding: 0; }
 
